@@ -378,6 +378,19 @@ Examples:
     - container_b
 ```
 
+### tmpfs
+
+Mount specific directories as tmpfs.
+
+Examples:
+
+```yml
+  tmpfs:
+    - /run
+    - /run/lock
+```
+
+
 ### dockerfile
 
 Create test image using a supplied Dockerfile, instead of the default Dockerfile created.  
