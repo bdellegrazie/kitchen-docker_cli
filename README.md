@@ -111,6 +111,16 @@ Examples:
     - service httpd start
 ```
 
+### stop_signal
+
+Adds support for `stop-signal`, default is SIGTERM
+
+Examples:
+
+```yml
+  stop_signal: SIGRTMIN+3
+```
+
 ### environment
 
 Adds `ENV` command(s) to `Dockerfile`.
