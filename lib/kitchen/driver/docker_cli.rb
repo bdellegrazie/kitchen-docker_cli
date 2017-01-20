@@ -128,6 +128,7 @@ module Kitchen
         Array(config[:expose]).each { |exp| cmd << " --expose #{exp}" }
         Array(config[:dns]).each {|dns| cmd << " --dns #{dns}"}
         Array(config[:add_host]).each {|mapping| cmd << " --add-host #{mapping}"}
+        Array(config[:tmpfs]).each {|mapping| cmd << " --tmpfs #{mapping}"}
         cmd << " #{image} #{config[:command]}"
       end
 
